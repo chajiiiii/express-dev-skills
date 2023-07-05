@@ -1,15 +1,21 @@
 const skills = [
-  { skill: "HTML", proficiency: "Intermediate" },
-  { skill: "CSS", proficiency: "Intermediate" },
-  { skill: "JavaScript", proficiency: "Beginner" },
-  { skill: "Node.js", proficiency: "Beginner" },
-  { skill: "Express", proficiency: "Beginner" },
+  { id: 123456, skill: "HTML", proficiency: "Intermediate", project: true },
+  { id: 789101, skill: "CSS", proficiency: "Intermediate", project: true },
+  { id: 121314, skill: "JavaScript", proficiency: "Beginner", project: true },
+  { id: 151617, skill: "Node.js", proficiency: "Beginner", project: false },
+  { id: 1819920, skill: "Express", proficiency: "Beginner", project: false },
 ];
 
 module.exports = {
   getAll,
+  getOne,
 };
 
 function getAll() {
   return skills;
+}
+
+function getOne(id) {
+  id = parseInt(id);
+  return skills.find((skill) => skill.id === id);
 }

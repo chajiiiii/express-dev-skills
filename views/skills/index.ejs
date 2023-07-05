@@ -5,7 +5,10 @@
 <ul>
   <% skills.forEach(function(s) { %>
   <li>
-    <p>Tech Skill: <%= s.skill %> | Proficiency: <%= s.proficiency %></p>
+    <p>
+      Tech Skill: <a href="/skills/<%= s.id %>"><%= s.skill %></a> |
+      Proficiency: <%= s.proficiency %>
+    </p>
   </li>
   <% }); %>
 </ul>
