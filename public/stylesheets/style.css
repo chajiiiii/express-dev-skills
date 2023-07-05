@@ -13,3 +13,22 @@ a {
 a:hover {
   color: #7cacbd;
 }
+
+button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+div.new-skill {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+input {
+  margin-top: 0.3rem;
+  padding: 0.3rem;
+}
+
+ul {
+  margin: 2.5rem 0 2.5rem 0;
+}

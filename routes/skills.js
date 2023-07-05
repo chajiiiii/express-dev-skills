@@ -8,7 +8,13 @@ const skills = require("../controllers/skills");
 // GET /skills
 router.get("/", skillsCtrl.index);
 
+// Get /skills/new <- Define BEFORE show route
+router.get("/new", skillsCtrl.new);
+
 // GET /skills/:id
 router.get("/:id", skillsCtrl.show);
+
+// GET /skills
+router.post("/", skillsCtrl.create);
 
 module.exports = router;
