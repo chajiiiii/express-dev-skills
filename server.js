@@ -14,7 +14,13 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.use(function (req, res, next) {
-  res.locals.time = new Date().toLocaleTimeString();
+  res.locals.time = new Date().toLocaleTimeString([], {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
   next();
 });
 

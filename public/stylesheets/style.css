@@ -1,8 +1,15 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  background-color: blanchedalmond;
 }
 
 a {
-  color: #00B7FF;
+  color: #0462ba;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #7cacbd;
 }
