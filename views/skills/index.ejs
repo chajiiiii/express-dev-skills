@@ -5,7 +5,14 @@
 <ul>
   <% skills.forEach(function(s) { %>
   <li>
-    <p>
+    <form
+      action="/skills/<%= s.id %>?_method=DELETE"
+      method="POST"
+      class="delete-form"
+    >
+      <button type="submit">⨉</button>
+    </form>
+    <p class="skills">
       Tech Skill: <a href="/skills/<%= s.id %>"><%= s.skill %></a> |
       Proficiency: <%= s.proficiency %>
     </p>

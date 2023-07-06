@@ -11,11 +11,14 @@ a {
 }
 
 a:hover {
-  color: #7cacbd;
+  color: #ea6f36;
 }
 
 button {
   font-family: "Ubuntu", sans-serif;
+}
+
+button.new-skill-btn {
   padding: 0.3rem;
   margin-top: 1rem;
 }
@@ -29,6 +32,39 @@ input {
   padding: 0.3rem;
 }
 
+p {
+  display: inline;
+}
+
+p.skills {
+  padding-left: 0.3rem;
+}
+
 ul {
   margin: 2.5rem 0 2.5rem 0;
+  padding-left: 1rem;
+}
+
+li {
+  list-style: none;
+  padding: 0.2rem;
+}
+
+.delete-form {
+  display: inline-block;
+}
+
+.delete-form button {
+  color: blanchedalmond;
+  background-color: #0462ba;
+  font-weight: bold;
+  padding: 0.5px 3px 0.5px 3px;
+  border: 0.5px solid #0462ba;
+  border-radius: 50%;
+}
+
+.delete-form button:hover {
+  background-color: #ea6f36;
+  border: 0.5px solid #ea6f36;
+  cursor: pointer;
 }

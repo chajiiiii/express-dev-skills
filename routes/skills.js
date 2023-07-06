@@ -17,4 +17,7 @@ router.get("/:id", skillsCtrl.show);
 // GET /skills
 router.post("/", skillsCtrl.create);
 
+// GET /skills/:id
+router.delete("/:id", skillsCtrl.delete);
+
 module.exports = router;
