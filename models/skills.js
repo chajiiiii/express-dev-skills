@@ -4,21 +4,21 @@ const skills = [
     skill: "HTML",
     proficiency: "Intermediate",
     project: true,
-    projectLink: "https://chajiiiii.github.io/Simon-Game/",
+    projectLink: "https://github.com/chajiiiii/Simon-Game",
   },
   {
     id: 789101,
     skill: "CSS",
     proficiency: "Intermediate",
     project: true,
-    projectLink: "https://chajiiiii.github.io/Simon-Game/",
+    projectLink: "https://github.com/chajiiiii/Simon-Game",
   },
   {
     id: 121314,
     skill: "JavaScript",
     proficiency: "Beginner",
     project: true,
-    projectLink: "https://chajiiiii.github.io/Simon-Game/",
+    projectLink: "https://github.com/chajiiiii/Simon-Game",
   },
   { id: 151617, skill: "Node.js", proficiency: "Beginner", project: false },
   { id: 1819920, skill: "Express", proficiency: "Beginner", project: false },
@@ -29,7 +29,15 @@ module.exports = {
   getOne,
   create,
   deleteOne,
+  update,
 };
+
+function update(id, updatedProficiency) {
+  id = parseInt(id);
+  const skill = skills.find((skill) => skill.id === id);
+  Object.assign(skill, updatedProficiency);
+  console.log(skill);
+}
 
 function getAll() {
   return skills;

@@ -18,7 +18,8 @@ button {
   font-family: "Ubuntu", sans-serif;
 }
 
-button.new-skill-btn {
+button.new-skill-btn,
+button.edit-skill-btn {
   padding: 0.3rem;
   margin-top: 1rem;
 }
@@ -47,24 +48,27 @@ ul {
 
 li {
   list-style: none;
+  display: inline-block;
   padding: 0.2rem;
 }
 
+section {
+  margin: 2.5rem 0 2.5rem 0;
+}
+
 .delete-form {
-  display: inline-block;
+  margin-bottom: 0.7rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.4rem;
 }
 
 .delete-form button {
-  color: blanchedalmond;
-  background-color: #0462ba;
+  color: rgb(186, 186, 186);
+  background-color: transparent;
   font-weight: bold;
   padding: 0.5px 3px 0.5px 3px;
-  border: 0.5px solid #0462ba;
-  border-radius: 50%;
+  border: none;
 }
 
 .delete-form button:hover {
-  background-color: #ea6f36;
-  border: 0.5px solid #ea6f36;
   cursor: pointer;
 }

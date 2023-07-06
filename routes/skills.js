@@ -14,10 +14,16 @@ router.get("/new", skillsCtrl.new);
 // GET /skills/:id
 router.get("/:id", skillsCtrl.show);
 
+// Get /skills/:id/edit
+router.get("/:id/edit", skillsCtrl.edit);
+
 // GET /skills
 router.post("/", skillsCtrl.create);
 
 // GET /skills/:id
 router.delete("/:id", skillsCtrl.delete);
+
+// GET /skills/:id
+router.put("/:id", skillsCtrl.update);
 
 module.exports = router;

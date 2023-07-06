@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+
+<section>
+  <h2><%= skill.skill %></h2>
+  <h3>
+    Proficiency:
+    <form
+      action="/skills/<%= skill.id %>?_method=PUT"
+      method="POST"
+      class="edit-form"
+    >
+      <input type="text" name="proficiency" value="<%= skill.proficiency %>" />
+      <button type="submit" class="edit-skill-btn">Save</button>
+    </form>
+  </h3>
+  <h3>
+    Project:
+    <a href="<%= skill.projectLink %>"
+      ><%= skill.project ? "Available" : "Not Available" %></a
+    >
+  </h3>
+</section>
+
+<%- include('../partials/footer') %>

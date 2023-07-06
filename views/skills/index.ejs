@@ -5,18 +5,18 @@
 <ul>
   <% skills.forEach(function(s) { %>
   <li>
-    <form
-      action="/skills/<%= s.id %>?_method=DELETE"
-      method="POST"
-      class="delete-form"
-    >
-      <button type="submit">⨉</button>
-    </form>
     <p class="skills">
       Tech Skill: <a href="/skills/<%= s.id %>"><%= s.skill %></a> |
       Proficiency: <%= s.proficiency %>
     </p>
   </li>
+  <form
+    action="/skills/<%= s.id %>?_method=DELETE"
+    method="POST"
+    class="delete-form"
+  >
+    <button type="submit">Delete</button>
+  </form>
   <% }); %>
 </ul>
 <a href="/skills/new">Add a New Skill</a>

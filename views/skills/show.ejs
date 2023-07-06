@@ -1,12 +1,15 @@
 <%- include('../partials/header') %>
 
-<h2><%= skill.skill %></h2>
-<h3>Proficiency: <%= skill.proficiency %></h3>
-<h3>
-  Project:
-  <a href="<%= skill.projectLink %>"
-    ><%= skill.project ? "Available" : "Not Available" %></a
-  >
-</h3>
+<section>
+  <h2><%= skill.skill %></h2>
+  <h3>Proficiency: <%= skill.proficiency %></h3>
+  <h3>
+    Project:
+    <a href="<%= skill.projectLink %>"
+      ><%= skill.project ? "Available" : "Not Available" %></a
+    >
+  </h3>
+</section>
+<a href="/skills/<%= skill.id %>/edit">Edit Skill Details</a>
 
 <%- include('../partials/footer') %>
