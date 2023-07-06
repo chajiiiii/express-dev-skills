@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<form action="/skills" method="POST">
+  <div class="new-skill">
+    <b>Skill Name</b><br />
+    <input type="text" name="skill" /><br />
+  </div>
+  <div class="new-skill">
+    <b>Proficiency</b><br />
+    <input type="text" name="proficiency" /><br />
+  </div>
+  <button type="submit" class="new-skill-btn">Save New Skill</button>
+</form>
+
+<%- include('../partials/footer') %>

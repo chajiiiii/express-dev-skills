@@ -1,7 +1,25 @@
 const skills = [
-  { id: 123456, skill: "HTML", proficiency: "Intermediate", project: true },
-  { id: 789101, skill: "CSS", proficiency: "Intermediate", project: true },
-  { id: 121314, skill: "JavaScript", proficiency: "Beginner", project: true },
+  {
+    id: 123456,
+    skill: "HTML",
+    proficiency: "Intermediate",
+    project: true,
+    projectLink: "https://chajiiiii.github.io/Simon-Game/",
+  },
+  {
+    id: 789101,
+    skill: "CSS",
+    proficiency: "Intermediate",
+    project: true,
+    projectLink: "https://chajiiiii.github.io/Simon-Game/",
+  },
+  {
+    id: 121314,
+    skill: "JavaScript",
+    proficiency: "Beginner",
+    project: true,
+    projectLink: "https://chajiiiii.github.io/Simon-Game/",
+  },
   { id: 151617, skill: "Node.js", proficiency: "Beginner", project: false },
   { id: 1819920, skill: "Express", proficiency: "Beginner", project: false },
 ];
